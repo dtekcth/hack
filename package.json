@@ -1,0 +1,29 @@
+{
+  "name": "hack",
+  "version": "1.0.0",
+  "description": "Hackathon websites for dHack",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-minify-css": "^0.3.11",
+    "gulp": "^3.8.10",
+    "gulp-uglify": "^1.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-clean": "^0.3.1",
+    "gulp-minify-html": "^0.1.7",
+    "gulp-uglify": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtekcth/hack.git"
+  },
+  "author": "dHack",
+  "bugs": {
+    "url": "https://github.com/dtekcth/hack/issues"
+  },
+  "homepage": "https://github.com/dtekcth/hack"
+}
