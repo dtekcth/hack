@@ -16,5 +16,7 @@ To deploy run:
 
 	gulp
 
-which will fill the directory build/ with the files needed for deploy. Push
-the subtree to dHack server to deploy.
+which will fill the directory build/ with the files needed for deploy.
+Checkout the publish branch and add the files from build/ as under the
+current working directory, then push the publish branch to the dHack server
+to make the changes live.
