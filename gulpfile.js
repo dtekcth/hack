@@ -2,15 +2,14 @@ var gulp = require('gulp'),
 	minifycss = require('gulp-minify-css'),
 	uglify = require('gulp-uglify'),
 	minifyhtml = require('gulp-minify-html'),
-	clean = require('gulp-clean');
+	del = require('del');
 
 var dest = 'build/';
 
 gulp.task('default', ['assets', 'css', 'js', 'html']);
 
 gulp.task('clean', function() {
-	return gulp.src(dest, { read: false })
-		.pipe(clean());
+	del(dest);
 });
 
 gulp.task('assets', function() {
