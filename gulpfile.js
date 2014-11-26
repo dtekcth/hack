@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 	minifycss = require('gulp-minify-css'),
 	uglify = require('gulp-uglify'),
-	minifyhtml = require('gulp-minify-html'),
+	htmlmin = require('gulp-html-minifier'),
 	del = require('del');
 
 var dest = 'build/';
@@ -31,6 +31,6 @@ gulp.task('js', function() {
 
 gulp.task('html', function() {
 	return gulp.src('*.html')
-		.pipe(minifyhtml({ empty: true }))
+		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest(dest));
 });
